@@ -1,0 +1,20 @@
+<div class="relative h-screen overflow-hidden bg-gray-100 lg:p-4">
+  <div class="flex items-start">
+    <overlay />
+    <sidebar mobileOrientation="end" />
+    <!--    lg:w-[calc(100%-16rem)] class get the remained width of the main tag from lg:viewport by subtracting
+    (the total width by the width of the sidebar component which is w-64 = 16rem)-->
+    <div
+      class="flex h-screen w-full flex-col pl-0 lg:space-y-4 {{
+        sidebarOpen() ? 'lg:w-full' : 'lg:pl-4 lg:w-[calc(100%-16rem)]'
+      }}"
+    >
+      <top-bar />
+      <main
+        class="h-screen overflow-auto px-2 pb-36 pt-8 md:pb-8 md:pt-4 lg:pt-0"
+      >
+        <ng-content />
+      </main>
+    </div>
+  </div>
+</div>
