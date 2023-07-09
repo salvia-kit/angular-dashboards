@@ -1,0 +1,8 @@
+.scrollbar::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* hide sidebar scrollbar on Chrome, Opera and other webkit Browsers*/
+}
+.scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none; /* hide sidebar scrollbar on Firefox, IE and Edge*/
+}

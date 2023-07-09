@@ -1,0 +1,26 @@
+.background {
+  background-image: url("./mac.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.content {
+  background-color: rgba(16 18 27 / 40%);
+  backdrop-filter: blur(24px);
+}
+
+.main {
+  color: #f9fafb;
+  background-color: rgba(16 18 27 / 40%);
+  overflow: auto;
+}
+
+.main::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: rgb(1 2 3 / 40%);
+  border-radius: 10px;
+}
