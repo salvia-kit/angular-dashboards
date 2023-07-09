@@ -1,0 +1,10 @@
+<aside
+  class="scrollbar bg-gray-200 overflow-y-auto h-screen top-0 lg:bg-transparent lg:block lg:relative lg:w-64 lg:z-auto
+{{ styles[mobileOrientation] }}
+{{ sidebarOpen() ? 'absolute z-40 w-8/12 sm:w-5/12' : 'hidden' }}"
+>
+  <div class="pb-32 lg:pb-6">
+    <sidebar-header></sidebar-header>
+    <sidebar-items></sidebar-items>
+  </div>
+</aside>
