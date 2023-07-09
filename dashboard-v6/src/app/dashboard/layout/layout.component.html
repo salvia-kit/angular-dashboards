@@ -1,0 +1,18 @@
+<div class="relative h-screen overflow-hidden">
+  <div class="flex items-start">
+    <overlay />
+    <sidebar mobileOrientation="end" />
+    <!-- lg:w-[calc(100%-16rem)] class get the remained width of the main tag from lg:viewport by subtracting
+(the total width by the width of the sidebar component which is w-64 = 16rem)-->
+    <div
+      class="flex h-screen w-full flex-col bg-[#25074D] pl-0 lg:w-[calc(100%-16rem)]"
+    >
+      <top-bar />
+      <main
+        class="h-screen overflow-auto bg-gray-100 px-2 pb-36 pt-4 md:px-4 md:pb-8 lg:rounded-tl-3xl lg:px-6"
+      >
+        <ng-content />
+      </main>
+    </div>
+  </div>
+</div>

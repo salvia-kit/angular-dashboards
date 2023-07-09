@@ -1,0 +1,14 @@
+<a routerLink="{{ routerLink }}">
+  <span
+    class="my-2 flex w-full items-center justify-start p-4 text-sm hover:text-white {{
+      currentRoute() === routerLink ? 'font-medium text-white' : 'text-gray-400'
+    }}"
+  >
+    <span>
+      <ng-content />
+    </span>
+    <span class="mx-4">
+      {{ title }}
+    </span>
+  </span>
+</a>
