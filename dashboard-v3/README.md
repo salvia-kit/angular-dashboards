@@ -2,11 +2,6 @@
 
 ![Salvia-kit Dashboard v3](https://www.salvia-kit.com/images/dashboards/dashv3.png)
 
-How to clone the repo
-``` 
-git@github.com:salvia-kit/angular-dashboards.git ./dashboard-v3
-```
-
 ## 📋 Documentation
 You can see the documentation on [http://localhost:3000/admin/documentation](http://localhost:3000/admin/documentation)
 
